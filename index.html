@@ -1,5 +1,13 @@
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120519401-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120519401-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,17 +26,21 @@
         <br />
         <button style="margin:8px" onclick="reload()">Reload</button>
         <p style="font-size:9pt;">Started 5 June 2018</p>
+        <a href="/">Mono</a>
+        <a href="1bpp.html">B/W</a>
+        <a href="random.html">Random</a>
+
+        <br />
+
         <a href="https://github.com/SeeAnything">Code</a>
         <a href="about.html">About</a>
-        <a href="1bpp.html">B/W</a>
 
         <script>
             function reload() {
                 var img=document.querySelector('#gen')
-                img.src='/theimage.bmp?t='+(+new Date());
+                img.src='http://seeanything.org/theimage.bmp?t='+(+new Date());
             }
             document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(reload, 500);
                 setInterval(reload, 2000);
             });
         </script>

@@ -15,9 +15,9 @@
     <title>See Anything</title>
 </head>
 <body>
-        <h1 style="margin-top:64px;">See Anything (B/W)</h1>
+        <h1 style="margin-top:64px;">See Anything (Random)</h1>
 
-        <p style="font-size:10pt;">Each pixel is either black or white - 1 bit per pixel</p>
+        <p style="font-size:10pt;">The value of each pixel is chosen randomly - 8 bits per pixel</p>
 
         <div class="img-container">
             <img id="gen" style="position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;" src="img/load.gif" />            
@@ -25,7 +25,8 @@
 
         <br />
         <button style="margin:8px" onclick="reload()">Reload</button>
-        <p style="font-size:9pt;">Started 7 June 2018</p>
+
+        <br />
         <a href="/">Mono</a>
         <a href="1bpp.html">B/W</a>
         <a href="random.html">Random</a>
@@ -38,10 +39,10 @@
         <script>
             function reload() {
                 var img=document.querySelector('#gen')
-                img.src='http://seeanything.org/theimage_1bpp.bmp?t='+(+new Date());
+                img.src='http://seeanything.org/theimage_rand.bmp?t='+(+new Date());
             }
             document.addEventListener('DOMContentLoaded', function() {
-                setInterval(reload, 500);
+                setInterval(reload, 2000);
             });
         </script>
 
