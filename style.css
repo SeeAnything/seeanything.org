@@ -1,0 +1,31 @@
+html, body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #eee;
+    text-align: center;
+}
+
+a {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 240px;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.18);
+}
+
+.about-container {
+    display: inline-block;
+    max-width:480px;
+    background-color: white;
+    padding: 16px;
+    font-size: 12pt;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.18);
+    line-height: 18pt;
+}
